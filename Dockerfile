@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER Maik Ellerbrock (https://github.com/ellerbrock)
+MAINTAINER Hugo Josefson <hugo@josefson.org> (https://www.hugojosefson.com/)
 
 RUN apk update && \
   apk add --no-cache openssl && \
