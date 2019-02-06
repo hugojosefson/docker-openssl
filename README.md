@@ -1,6 +1,7 @@
 # OpenSSL on Alpine Linux
 
 - Docker Hub: [hugojosefson/openssl](https://hub.docker.com/r/hugojosefson/openssl/)
+  - Auto-updated whenever [alpine](https://hub.docker.com/_/alpine/) is updated.
 - Repository: <https://github.com/hugojosefson/docker-openssl>
 - Dockerfile: <https://github.com/hugojosefson/docker-openssl/blob/master/Dockerfile>
 - Base Image: [alpine](https://hub.docker.com/_/alpine/)
