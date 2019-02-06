@@ -24,7 +24,7 @@ docker run --rm -it \
 
 ### Create an SSL Certificate
 
-OpenSSL asks for details and exports the certificate in the current directory as `cert.pem`:
+OpenSSL asks for details and exports the certificate signing request in the current directory as `cert-request.csr`, and the private key as `privkey.pem`:
 
 ```bash
 docker run --rm -it \
@@ -32,7 +32,7 @@ docker run --rm -it \
   -w /export \
   -u $(id -u):$(id -g) \
   hugojosefson/openssl \
-  req -nodes -new -newkey rsa:2048 -sha256 -out /export/cert.pem
+  req -nodes -new -newkey rsa:2048 -sha256 -out /export/cert-request.csr
 ```
 
 Read the OpenSSL [documentation](https://www.openssl.org/docs/) for further information.
