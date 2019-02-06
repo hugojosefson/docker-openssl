@@ -29,6 +29,7 @@ OpenSSL asks for details and exports the certificate in the current directory as
 ```bash
 docker run --rm -it \
   -v $(pwd):/export \
+  -w /export \
   -u $(id -u):$(id -g) \
   hugojosefson/openssl \
   req -nodes -new -newkey rsa:2048 -sha256 -out /export/cert.pem
